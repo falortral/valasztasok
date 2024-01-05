@@ -25,6 +25,7 @@ export default function content(req: http.IncomingMessage, res: http.ServerRespo
     const params = new url.URL(req.url as string, `http://${req.headers.host}/`).searchParams;
 
     // Kezd a kódolást innen -->
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const mo: Megoldás = new Megoldás("szavazatok.txt");
 
     // res.write("Egyszerű Hello World! (2023/2024)\n");

@@ -11,6 +11,15 @@ export default class ValasztasiEredmeny {
     #keresztNev: string;
     #partJel: string;
 
+    // kódtagok:
+    get név(): string {
+        return `${this.#vezetekNev} ${this.#keresztNev}`;
+    }
+
+    get szavazatok(): number {
+        return this.#szavazatok;
+    }
+
     constructor(sor: string) {
         const m: string[] = sor.split(" ");
         this.#kerulet = parseInt(m[0]);
